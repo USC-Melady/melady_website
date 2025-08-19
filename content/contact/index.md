@@ -1,5 +1,5 @@
 ---
-title: Join
+title: Contact Us
 date: 2022-10-24
 
 type: landing
@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Join Us
+      title: Contact Us
       text: |-
         Join us and get involved in cutting-edge research!
 

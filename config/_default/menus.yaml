@@ -16,6 +16,9 @@ main:
   - name: Lab Outings
     url: tour
     weight: 40
-  - name: Join Us
-    url: join
-    weight: 50
+  - name: Blog
+    url: 'https://cold-saturn-748.notion.site/216b5de42441800e9712cf52300346c2?v=216b5de4244181b0bcb1000ca779165f'
+    weight: 50    
+  - name: Contact Us
+    url: contact
+    weight: 60
