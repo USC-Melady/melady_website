@@ -1,20 +1,18 @@
 ---
-title: 'Beyond Forecasting: Compositional Time Series Reasoning for End-to-End Task
-  Execution'
+title: 'TS-Reasoner: Domain-Oriented Time Series Inference Agents for Reasoning and Automated Analysis'
 authors:
 - Wen Ye
-- Yizhou Zhang
 - Wei Yang
-- Lumingyuan Tang
 - Defu Cao
+- Yizhou Zhang
+- Lumingyuan Tang
 - Jie Cai
 - Yan Liu
-date: '2024-10-01'
+date: '2026-03-20'
 publishDate: '2025-01-08T05:27:41.762179Z'
 publication_types:
-- manuscript
-publication: '*arXiv*'
-doi: 10.48550/arXiv.2410.04047
+- article-journal
+publication: '*Transactions on Machine Learning Research*'
 abstract: In recent decades, there has been substantial advances in time series models
   and benchmarks across various individual tasks, such as time series forecasting,
   classification, and anomaly detection. Meanwhile, compositional reasoning in time
@@ -39,6 +37,6 @@ tags:
 - Computer Science - Artificial Intelligence
 - Computer Science - Machine Learning
 links:
-- name: URL
-  url: http://arxiv.org/abs/2410.04047
+- name: OpenReview
+  url: https://openreview.net/forum?id=yhy7Vigjcf
 ---

@@ -1,17 +1,14 @@
 ---
-title: 'TimeDiT: General-purpose Diffusion Transformers for Time Series Foundation
-  Model'
+title: 'TimeDiT: General-purpose Diffusion Transformers for Time Series Foundation Model'
 authors:
 - Defu Cao
 - Wen Ye
-- Yizhou Zhang
 - Yan Liu
-date: '2024-09-01'
+date: '2024-07-03'
 publishDate: '2025-01-08T05:27:41.746786Z'
 publication_types:
-- manuscript
-publication: '*arXiv*'
-doi: 10.48550/arXiv.2409.02322
+- paper-conference
+publication: '*ICML 2024 Workshop on Foundation Models in the Wild*'
 abstract: With recent advances in building foundation models for texts and video data,
   there is a surge of interest in foundation models for time series. A family of models
   have been developed, utilizing a temporal auto-regressive generative Transformer
@@ -38,6 +35,8 @@ tags:
 - Computer Science - Artificial Intelligence
 - Computer Science - Machine Learning
 links:
-- name: URL
-  url: http://arxiv.org/abs/2409.02322
+- name: OpenReview
+  url: https://openreview.net/forum?id=DA36Myd4HD
+- name: arXiv
+  url: https://arxiv.org/abs/2409.02322
 ---

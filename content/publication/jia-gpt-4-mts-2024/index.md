@@ -9,8 +9,8 @@ authors:
 date: '2024-03-01'
 publishDate: '2025-01-08T05:27:41.754747Z'
 publication_types:
-- article-journal
-publication: '*Proceedings of the AAAI Conference on Artificial Intelligence*'
+- paper-conference
+publication: '*Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)*'
 doi: 10.1609/aaai.v38i21.30383
 abstract: Time series forecasting is an essential area of machine learning with a
   wide range of real-world applications. Most of the previous forecasting models aim

@@ -3,16 +3,16 @@ title: 'When Physics Meets Machine Learning: A Survey of Physics-Informed Machin
   Learning'
 authors:
 - Chuizheng Meng
-- Sungyong Seo
-- Defu Cao
 - Sam Griesemer
+- Defu Cao
+- Sungyong Seo
 - Yan Liu
-date: '2022-03-01'
+date: '2025-05-01'
 publishDate: '2025-01-08T06:22:33.460084Z'
 publication_types:
-- manuscript
-publication: '*arXiv*'
-doi: 10.48550/arXiv.2203.16797
+- article-journal
+publication: '*Machine Learning for Computational Science and Engineering*'
+doi: 10.1007/s44379-025-00016-0
 abstract: "Physics-informed machine learning (PIML), referring to the combination
   of prior knowledge of physics, which is the high level abstraction of natural phenomenons
   and human behaviours in the long history, with data-driven machine learning models,
@@ -26,6 +26,8 @@ tags:
 - Computer Science - Machine Learning
 - Statistics - Machine Learning
 links:
-- name: URL
-  url: http://arxiv.org/abs/2203.16797
+- name: DOI
+  url: https://doi.org/10.1007/s44379-025-00016-0
+- name: arXiv
+  url: https://arxiv.org/abs/2203.16797
 ---

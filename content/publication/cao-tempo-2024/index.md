@@ -11,9 +11,8 @@ authors:
 date: '2024-04-01'
 publishDate: '2025-01-08T05:27:41.735822Z'
 publication_types:
-- manuscript
-publication: '*arXiv*'
-doi: 10.48550/arXiv.2310.04948
+- paper-conference
+publication: '*International Conference on Learning Representations (ICLR)*'
 abstract: "The past decade has witnessed significant advances in time series modeling
   with deep learning. While achieving state-of-the-art results, the best-performing
   architectures vary highly across applications and domains. Meanwhile, for natural
@@ -37,6 +36,8 @@ tags:
 - Computer Science - Computation and Language
 - Computer Science - Machine Learning
 links:
-- name: URL
-  url: http://arxiv.org/abs/2310.04948
+- name: Proceedings
+  url: https://proceedings.iclr.cc/paper_files/paper/2024/hash/5132940b1bced8a7b28e9695d49d435a-Abstract-Conference.html
+- name: arXiv
+  url: https://arxiv.org/abs/2310.04948
 ---
