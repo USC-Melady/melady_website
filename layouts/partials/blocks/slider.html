@@ -32,7 +32,7 @@
 
 {{ $slide_count := len $slides }}  
 
-{{ $group_count := div (add $slide_count 1) 2 }}
+{{ $group_count := div (add $slide_count 3) 4 }}
 
 
 <!-- Indicators -->
@@ -146,44 +146,28 @@
     <!-- Slides -->
     <div class="carousel-inner">
       {{ range $index, $item := $slides }}
-        {{ if eq (mod $index 2) 0 }}
+        {{ if eq (mod $index 4) 0 }}
           <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
             <div class="row align-items-center justify-content-center" style="height: 100%;">
-              {{/* First image */}}
-              {{ $bg_img1 := resources.Get (printf "%s/%s" $image_folder $item.filename) }}
-              {{ if $bg_img1 }}
-                <div class="col-12 col-md-6" style="position: relative; text-align: center; padding-bottom: 30px;">
-                  <img src="{{ $bg_img1.Permalink }}" alt="{{ $item.filename }}">
-                  <div class="carousel-caption" style="bottom: 0;">
-                    <p style="margin: 0; font-size: 0.9rem;">
-                      {{ $filename1 := $item.filename }}
-                      {{ $extension1 := path.Ext $filename1 }}
-                      {{ $basename1 := strings.TrimSuffix $extension1 $filename1 }}
-                      {{ $clean_name1 := replace (replace $basename1 "_" " ") "-" " " }}
-                      {{ $clean_name1 | title }}
-                    </p>
-                  </div>
-                </div>
-              {{ end }}
-
-              {{/* Second image if exists */}}
-              {{ $next_index := add $index 1 }}
-              {{ if lt $next_index $slide_count }}
-                {{ $next_item := index $slides $next_index }}
-                {{ $bg_img2 := resources.Get (printf "%s/%s" $image_folder $next_item.filename) }}
-                {{ if $bg_img2 }}
-                  <div class="col-12 col-md-6" style="position: relative; text-align: center; padding-bottom: 30px;">
-                    <img src="{{ $bg_img2.Permalink }}" alt="{{ $next_item.filename }}">
-                    <div class="carousel-caption" style="bottom: 0;">
-                      <p style="margin: 0; font-size: 0.9rem;">
-                        {{ $filename2 := $next_item.filename }}
-                        {{ $extension2 := path.Ext $filename2 }}
-                        {{ $basename2 := strings.TrimSuffix $extension2 $filename2 }}
-                        {{ $clean_name2 := replace (replace $basename2 "_" " ") "-" " " }}
-                        {{ $clean_name2 | title }}
-                      </p>
+              {{ range $i := seq 0 3 }}
+                {{ $cur_index := add $index $i }}
+                {{ if lt $cur_index $slide_count }}
+                  {{ $cur_item := index $slides $cur_index }}
+                  {{ $bg_img := resources.Get (printf "%s/%s" $image_folder $cur_item.filename) }}
+                  {{ if $bg_img }}
+                    <div class="col-12 col-md-6" style="position: relative; text-align: center; padding-bottom: 20px;">
+                      <img src="{{ $bg_img.Permalink }}" alt="{{ $cur_item.filename }}" style="max-height: 48vh;">
+                      <div class="carousel-caption" style="bottom: 0;">
+                        <p style="margin: 0; font-size: 0.9rem;">
+                          {{ $filename := $cur_item.filename }}
+                          {{ $extension := path.Ext $filename }}
+                          {{ $basename := strings.TrimSuffix $extension $filename }}
+                          {{ $clean_name := replace (replace $basename "_" " ") "-" " " }}
+                          {{ $clean_name | title }}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  {{ end }}
                 {{ end }}
               {{ end }}
             </div>
