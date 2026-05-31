@@ -1,5 +1,5 @@
 ---
-title: "USC Institute on Ethics and Trust in Computing Launched Inaugural Summit"
+title: "USC Institute on Ethics and Trust"
 date: 2026-04-30
 image:
     size: 'cover'
